@@ -4,73 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Projet Statique</title>
-    <meta name="description" content="Description de mon projet statique">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
+        <img src="images/logo.png" alt="Logo" class="logo">
         <nav>
-            <div class="logo">MonLogo</div>
-            <ul class="nav-links">
-                <li><a href="#accueil">Accueil</a></li>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#apropos">À propos</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="accueil" class="hero">
-            <h1>Bienvenue sur mon site statique</h1>
-            <p>Un exemple de page d'accueil moderne et responsive</p>
-            <a href="#contact" class="cta-button">Contactez-nous</a>
-        </section>
-
-        <section id="services" class="services">
-            <h2>Nos Services</h2>
-            <div class="service-grid">
-                <article class="service-card">
-                    <h3>Service 1</h3>
-                    <p>Description du premier service proposé.</p>
-                </article>
-                <article class="service-card">
-                    <h3>Service 2</h3>
-                    <p>Description du deuxième service proposé.</p>
-                </article>
-                <article class="service-card">
-                    <h3>Service 3</h3>
-                    <p>Description du troisième service proposé.</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="apropos" class="about">
-            <h2>À Propos de Nous</h2>
-            <p>Une brève description de votre projet, entreprise ou passion.</p>
-        </section>
-
-        <section id="contact" class="contact">
-            <h2>Contactez-nous</h2>
-            <form>
-                <input type="text" placeholder="Votre nom" required>
-                <input type="email" placeholder="Votre email" required>
-                <textarea placeholder="Votre message" required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
+        <section id="home" class="hero">
+            <h1>Bienvenue sur notre site</h1>
+            <button id="cta-btn">Découvrir</button>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Mon Projet Statique. Tous droits réservés.</p>
-        <div class="social-links">
-            <a href="#">Twitter</a>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-        </div>
+        <p>&copy; 2023 Mon Projet</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
 </html>
